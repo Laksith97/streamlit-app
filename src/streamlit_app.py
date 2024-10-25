@@ -108,15 +108,20 @@ def main():
         revenue_over_time = filtered_orders.resample('M', on='order_date')['total_amount'].sum()
         st.line_chart(revenue_over_time)
 
-        # Summary Metrics
+        # Updated Summary Metrics with a Modern View
         st.header("Summary Metrics")
+
+        # Calculate metrics
         total_revenue = filtered_orders['total_amount'].sum()
         unique_customers = filtered_orders['customer_id'].nunique()
         total_orders = filtered_orders['order_id'].count()
 
-        st.write(f"**Total Revenue (Filtered):** ${total_revenue:,.2f}")
-        st.write(f"**Number of Unique Customers (Filtered):** {unique_customers}")
-        st.write(f"**Number of Orders (Filtered):** {total_orders}")
+        # Display metrics with gaps
+        col1, spacer1, col2, spacer2, col3 = st.columns([1.2, 0.1, 0.8, 0.1, 0.8])
+        
+        col1.metric(label="💰 Total Revenue", value=f"${total_revenue:,.2f}")
+        col2.metric(label="👥 Unique Customers", value=unique_customers)
+        col3.metric(label="📦 Total Orders", value=total_orders)
 
 if __name__ == "__main__":
     main()
