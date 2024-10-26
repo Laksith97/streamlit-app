@@ -118,9 +118,10 @@ def main():
     Main function to orchestrate the data import process.
     """
     # Database credentials
+    # Please replace below values using relevant db info
     DB_CONFIG = {
         'user': 'root',
-        'password': 'La&Ra@97',
+        'password': 'Laa&Raa@97',
         'host': 'localhost',
         'db_name': 'delivergate'
     }

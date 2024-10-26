@@ -5,9 +5,10 @@ from sqlalchemy import create_engine
 import urllib.parse  # For URL encoding
 
 # Database connection configuration
+# Please replace below values using relevant db info
 DB_CONFIG = {
     'user': 'root',
-    'password': urllib.parse.quote_plus('La&Ra@97'),  # Safely encode the password
+    'password': urllib.parse.quote_plus('Laa&Raa@97'),  # Safely encode the password
     'host': 'localhost',
     'db_name': 'delivergate'
 }
