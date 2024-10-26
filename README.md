@@ -5,7 +5,7 @@ Streamlit App consists of data preparations, app setup and data analysis using p
 
 ## Overview
 This application provides a data engineering solution that imports customer and order data from CSV files into a MySQL database and visualizes the data using a Streamlit web application.
-ALso, included a machine learning model (logistic regression) that predicts whether a customer is a repeat purchaser based on their total orders and revenue.
+Also, included a machine learning model (logistic regression) that predicts whether a customer is a repeat purchaser based on their total orders and revenue.
 
 ## Project Structure
 ```
