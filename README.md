@@ -23,7 +23,7 @@ STREAMLIT APP
 ```
 
 ## Requirements 
-All requirements for database setup, streamlit-app setup, and model setup are icluded in the requirements.txt file.
+All requirements for database setup, streamlit-app setup, and model setup are icluded in the "requirements.txt" file.
 
 
 ## Support
