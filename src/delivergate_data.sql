@@ -19,6 +19,13 @@ CREATE TABLE IF NOT EXISTS orders (
 SELECT * FROM orders;
 SELECT * FROM customers;
 
+-- These insert into statements have placed in the data_import.py file within codes
+INSERT INTO customers (customer_id, customer_name) 
+VALUES (:customer_id, :customer_name);
+INSERT INTO orders (order_id, customer_id, total_amount, order_date) 
+VALUES (:order_id, :customer_id, :total_amount, :order_date);
+
+
 SELECT COUNT(*) FROM orders;
 SELECT COUNT(*) FROM customers;
 
